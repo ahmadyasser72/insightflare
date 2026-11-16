@@ -209,6 +209,8 @@ Cloudflare 会自动 Clone 这个仓库、创建并绑定所需要的资源。�
 
 填写完毕后，等待 3 分钟让项目部署完毕，你就可以登录到仪表盘并开始追踪访问数据了。此外，你可以在项目的设置页面自定义其域名。默认的访问地址是 `https://insightflare.<your-cloudflare-username>.workers.dev`
 
+如果无法登录现有管理员账号，修改 `BOOTSTRAP_ADMIN_PASSWORD` 不会重置该账号。在已安装仓库依赖并配置 Cloudflare 身份验证的交互终端中运行 `pnpm run ops:admin:reset-password -- --user <username>`。包括 `cf` CLI 在内的更多参数可通过 `pnpm run ops:admin:reset-password -- --help` 查看。
+
 ---
 
 ## 进阶配置
